@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 740px) {
+    .banner{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}

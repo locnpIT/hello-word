@@ -1,0 +1,221 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+/* tablet */
+@media (min-width: 741px) and (max-width: 1023px) {
+     
+    
+    
+    
+    /* Lĩnh vực hoạt động */
+     .field .field-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .field-info .field-info_item {
+        width: 50%;   
+        height: 100vh;
+    }
+
+
+
+    header{
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+    .menu .menu-list{
+        display: flex;
+        transform: translateY(50%);
+        /* width: 10rem; */
+        flex-direction: column;
+        position: relative;
+        z-index: 6;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu .menu-list li{
+        display: block;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        padding-left: 3rem;
+    }
+    .menu .menu-list li:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    /* dropdowlist */
+    .dropdown-list{
+        left: 0;
+        transform: translateX(-125%);
+        transition: 0.2s linear;
+    }
+    .dropdown .dropdown-list{
+        display: block;
+        width: 20rem;
+    }
+    .dropdown .dropdown-list .dropdown-item{
+        text-align: start;
+        cursor: pointer;
+        transition: 0.2s linear;    
+        padding: 2rem 2rem;
+        display: block;
+        width: 25rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-left: 0.5rem solid transparent;
+    }
+
+    .menu .menulist .icon-home{
+        display: none;
+        opacity: 0 !important;
+    }
+    .menu .menu-list .flag-default{
+        display: none;
+    }
+    .icon-home i{
+        display: none;
+    }
+    .icon-home::after{
+        display: none;
+     
+    }
+
+
+    .toggle-btn{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+    }    
+    .menu{
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    /* menu */
+    header{
+        width: 100%;
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .toggle-btn{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+    }
+    .menu .menu-list{
+        display: flex;
+        transform: translateY(50%);
+        flex-direction: column;
+        z-index: 6;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu .menu-list li{
+        display: block;
+        width: 100%;
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        background-color: white;
+        text-align: left;
+        padding-left: 3rem;
+        position: relative;
+    }
+    .menu .menu-list li:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    /* dropdowlist */
+    .dropdown-list{
+        position: absolute;
+        left: 0;
+        transform: translateX(-125%);
+        transition: 0.2s linear;
+    }
+    .dropdown .dropdown-list{
+        display: block;
+        width: 20rem;
+    }
+    .dropdown .dropdown-list .dropdown-item{
+        text-align: start;
+        cursor: pointer;
+        transition: 0.2s linear;    
+        padding: 2rem 2rem;
+        display: block;
+        width: 25rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-left: 0.5rem solid transparent;
+    }
+
+    .menu .menulist .icon-home{
+        visibility: hidden;
+        display: none !important;
+        opacity: 0 !important;
+        background-color: transparent;
+    }
+    .icon-home i{
+        background-color: transparent;
+        opacity: 0;
+    }
+    .menu .menu-list .flag-default{
+        display: none;
+    }
+    .icon-home i{
+        display: none;
+        /* background-color: transparent; */
+    }
+    .icon-home::after{
+        display: none;
+     
+    }
+
+
+   
+    /* Lĩnh vực hoạt động */
+    .field .field-info{
+        display: block;
+    }
+    .field-info .field-info_item {
+        width: 100%;   
+        height: 100vh;
+    }
+    /* cac du an bat dong san */
+    .real-estate_desc{
+        margin: 0 auto;
+    }
+    .real-estate_desc .real-estate_product{
+        width: 100%;
+    }
+    /* tin tức */
+    #news-head_rightRespondsive{
+        display: block;
+    }
+    .news .news-head_right{
+        display: none;
+    }
+
+
+    /* footer */
+   .footer-right .footer-detail{
+        width: 50%;
+    }
+    .container .footer-top{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .container .footer-left{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+}
